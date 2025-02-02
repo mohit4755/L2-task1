@@ -1,0 +1,113 @@
+body {
+    background-color: #f0f8ff;
+  }
+  .card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+  }
+  .card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+  }
+  .card-title {
+    color: #2c3e50;
+    font-weight: 800;
+    font-size: 1.2rem;
+    
+  }
+  .card-content p {
+    font-size: 1rem;
+    color: #34495e;
+    margin-bottom: 1rem;
+  }
+  .title {
+    color: #2a6496;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    font-weight: 900;
+  }
+
+  /* Explore Button Styling */
+  .explore {
+    display: inline-block;
+    background-color: #2a6496;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .explore:hover {
+    background-color: #1e4d70;
+    transform: translateY(-3px);
+  }
+
+  @media screen and (max-width: 768px) {
+    .columns.is-multiline .column {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .card {
+      margin-bottom: 1rem;
+    }
+
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .card-title {
+      font-size: 1rem;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* For large mobile devices (width <= 576px) */
+  @media screen and (max-width: 576px) {
+    .title {
+      font-size: 1.2rem;
+    }
+
+    .card-title {
+      font-size: 0.9rem;
+    }
+
+    .card-content p {
+      font-size: 0.8rem;
+    }
+
+    .button.is-fixed-bottom-right {
+      font-size: medium;
+      width: 50px;
+      height: 50px;
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+
+  /* For extra small devices (width <= 375px) */
+  @media screen and (max-width: 375px) {
+    .title {
+      font-size: 1rem;
+    }
+
+    .card-title {
+      font-size: 0.8rem;
+    }
+
+    .card-content p {
+      font-size: 0.7rem;
+    }
+
+    .card-footer-item {
+      font-size: 0.8rem;
+    }
+  }

@@ -1,0 +1,197 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #2a5b8b;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 0 10px;
+}
+
+.search-container input {
+    width: 50%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+}
+
+.search-container button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    background-color: #3498db;
+    color: #fff;
+    margin-left: 2%;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #2980b9;
+}
+
+/* Increased card size */
+.card {
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    padding: 1rem; */
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     background-color: #ffffff;
+}
+
+.card:hover {
+    /* transform: translateY(-10px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); */
+    transform: translateY(-7px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);  
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 400px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Smaller "View Details" button */
+.view-details-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-details-btn:hover {
+    background-color: #2980b9;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    border-bottom: 2px solid #2c3e50;
+    padding: 1.5rem;
+}
+
+.modal-header .btn-close {
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.modal-body {
+    padding: 2rem;
+    text-align: center;
+}
+
+.modal-body img {
+    max-height: 400px;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+.modal-body p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.modal-body h5 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.button.is-fixed-bottom-right {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius:50% ;
+    text-decoration: none;
+    background-color: #16d132;
+    font-size: large;
+    font-weight: 900;
+    color: black;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
+}
+
+.button.is-fixed-bottom-right:hover {
+    background-color: #d51515;
+    color: black;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .search-container input {
+        width: 80%;
+        padding: 0.7rem;
+    }
+    .card-img-top {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+}
